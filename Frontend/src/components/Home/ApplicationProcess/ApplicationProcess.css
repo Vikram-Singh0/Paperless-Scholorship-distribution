@@ -1,0 +1,95 @@
+
+.application-process {
+  width: 100%;
+  background: linear-gradient(135deg, #003366, #0066cc); 
+  color: white;
+  padding: 40px 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.application-process h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px; 
+  text-align: center;
+}
+
+.timeline-chart {
+  width: 100%;
+  max-width: 1200px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  position: relative;
+}
+
+.chart-step {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.chart-step:hover {
+  background: rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.chart-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0066cc; 
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 20px; 
+  transition: background 0.3s ease; 
+}
+
+.chart-icon:hover {
+  background: #004c99; 
+}
+
+.chart-description {
+  flex: 1;
+}
+
+.chart-description h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.chart-description p {
+  font-size: 1rem;
+  color: #d3d3d3; 
+}
+
+.timeline-chart::before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: white;
+  z-index: -1;
+}
+
+.timeline-chart .chart-step:first-child {
+  padding-top: 0;
+}
+
+.timeline-chart .chart-step:last-child {
+  padding-bottom: 0;
+}

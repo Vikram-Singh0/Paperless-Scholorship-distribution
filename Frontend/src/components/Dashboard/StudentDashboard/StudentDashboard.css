@@ -1,0 +1,39 @@
+.student-dashboard {
+  padding: 20px;
+}
+
+.status-section {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.btn.track-btn {
+  margin-top: 10px;
+}
+
+.btn.apply-btn {
+  background-color: #28a745;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.document-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.document-item {
+  margin-bottom: 10px;
+}

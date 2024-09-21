@@ -1,0 +1,65 @@
+.eligibility-section {
+  width: 100%;
+  background: #ffffff;
+  color: #003366;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eligibility-section h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.eligibility-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  max-width: 100%;
+  text-align: left;
+}
+
+.eligibility-section li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.eligibility-section li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #0066cc;
+  font-size: 1.5rem;
+}
+
+.details-button {
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.details-button:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+.details-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.5);
+}

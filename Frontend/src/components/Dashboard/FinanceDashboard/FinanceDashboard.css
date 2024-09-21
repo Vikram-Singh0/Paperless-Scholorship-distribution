@@ -1,0 +1,59 @@
+.finance-dashboard {
+  padding: 20px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 40%;
+}
+
+.finance-details {
+  text-align: right;
+}
+
+.finance-details h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.finance-details p {
+  font-size: 18px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.payment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-btn {
+  background-color: #4CAF50;
+  color: white;
+}

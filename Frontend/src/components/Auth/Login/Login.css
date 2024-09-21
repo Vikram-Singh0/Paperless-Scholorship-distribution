@@ -1,0 +1,140 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #003366, #0066cc);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin: auto;
+  animation: fadeIn 1s ease-out;
+  box-sizing: border-box;
+}
+
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-input, .login-select {
+  padding: 1rem;
+  border: 1px solid #0066cc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0.5rem 0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 95%;
+}
+
+.login-input:focus, .login-select:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+
+.login-button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #003d99;
+  transform: scale(1.05);
+}
+
+.login-button:active {
+  background-color: #003366;
+}
+
+.login-input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.error-message {
+  margin-top: 5px;
+  color: rgb(215, 56, 4);
+}
+
+.signup-prompt {
+  margin-top: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.signup-prompt .link {
+  text-decoration: none;
+  color: #00ccff;
+  font-weight: 700;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    padding: 1rem;
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+  }
+
+  .login-input, .login-select {
+    padding: 1rem 0.8rem;
+    font-size: 14px;
+  }
+
+  .login-button {
+    padding: 1rem 0.8rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-title {
+    font-size: 1.2rem;
+  }
+
+  .login-input, .login-select {
+    padding: .9rem 0.5rem;
+    font-size: 15px;
+  }
+
+  .login-button {
+    padding: .9rem 0.5rem;
+    font-size: 17px;
+  }
+}
